@@ -1,6 +1,7 @@
 /**
- * Created by pampl on 03/04/2017.
+ * Created by TeamProjetSuiviProjet on 03/04/2017.
  */
+
 import java.util.*;
 
 public class GroupeProjet{

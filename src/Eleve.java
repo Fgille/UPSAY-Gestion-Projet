@@ -1,6 +1,9 @@
 /**
- * Created by pampl on 03/04/2017.
+ * Created by TeamProjetSuiviProjet on 03/04/2017.
  */
+
+import java.util.*;
+
 import java.util.*;
 
 public class Eleve extends Personne {
@@ -13,4 +16,3 @@ public class Eleve extends Personne {
         return this.getNom() + "." + this.getPrenom() + "@univ-evry.fr";
     }
 }
-
