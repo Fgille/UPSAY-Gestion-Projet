@@ -4,8 +4,6 @@
 
 import java.util.*;
 
-import java.util.*;
-
 public class Eleve extends Personne {
 
     public Eleve(String n, String p) {

@@ -32,5 +32,4 @@ public abstract class Personne {
     }
 
     public abstract String getMail();
-
 }
