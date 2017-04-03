@@ -12,8 +12,8 @@ public class Jalon {
     public Jalon(){
     }
 
-    public Jalon(Date dateEval, ArrayList<File> listeFichiers){
-        this.dateEval = dateEval;
+    public Jalon(Date uneDate, ArrayList<File> listeFichiers){
+        this.dateEval = uneDate;
         this.listeFichiers = new ArrayList<>();
     }
 

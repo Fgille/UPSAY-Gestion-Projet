@@ -45,5 +45,4 @@ public class Projet {
             this.listeEvals.put(date, note);
         }
     }
-
 }
