@@ -14,6 +14,13 @@ public class Jalon {
     public Jalon(){
     }
 
+    public Jalon(Date uneDate)
+    {
+        this.dateEval = uneDate;
+    }
+
+    public Jalon(Date uneDate, String unResume)     {         this.dateEval = uneDate;         this.resume = unResume;     }
+
     public Jalon(String unResume, Date uneDate, ArrayList<File> listeFichiers){
         this.dateEval = uneDate;
         this.resume = unResume;
@@ -26,5 +33,10 @@ public class Jalon {
 
     public String getResume() {
         return resume;
+    }
+
+    public void setResume(String unResume)
+    {
+        this.resume = unResume;
     }
 }

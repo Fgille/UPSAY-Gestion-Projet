@@ -3,24 +3,26 @@
  */
 
 import java.util.*;
+import java.io.*;
 
 public class GroupeProjet{
     private Eleve chefProjet;
     private HashSet<Eleve> listeEleves;
+    private Projet unProjet;
 
     public GroupeProjet(){
         this.listeEleves = new HashSet<>();
     }
 
-    public void AjouterEleve(Eleve e){
+    public void ajouterEleve(Eleve e){
         this.listeEleves.add(e);
     }
 
-    public void SupprimerEleve(Eleve e){
+    public void supprimerEleve(Eleve e){
         this.listeEleves.remove(e);
     }
 
-    public void AjouterEleves(HashSet<Eleve> list){
+    public void ajouterEleves(HashSet<Eleve> list){
         this.listeEleves = list;
     }
 
@@ -31,7 +33,12 @@ public class GroupeProjet{
         }
     }
 
-    public void consulteJalon(){
+    public void realiseJalon(String unString, Jalon unJalon){
+        unJalon.setResume(unString);
+    }
 
+    public Jalon getJalon(Date uneDate)
+    {
+        return this.unProjet.getListeJalon().get(uneDate);
     }
 }

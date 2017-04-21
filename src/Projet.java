@@ -3,12 +3,13 @@
  */
 
 import java.util.*;
+import java.io.*;
 
 public class Projet {
     private int idProjet;
     private String titre;
     private String sujet;
-    private HashMap<Date, Float> listeEvals;
+    private HashMap<Date, Jalon> listeJalon;
 
     public Projet(){
         this.idProjet = 0;
@@ -16,33 +17,44 @@ public class Projet {
         this.sujet = "";
     }
 
-    public Projet(int idProjet, String titre, String sujet, HashMap<Date, Float> listeEvals){
+    public Projet(int idProjet, String titre, String sujet, HashMap<Date, Jalon> listeEvals){
         this.idProjet = idProjet;
         this.titre = titre;
         this.sujet = sujet;
-        this.listeEvals = new HashMap<>();
+        this.listeJalon = new HashMap<>();
     }
 
     public Projet(Projet p){
         this.idProjet = p.idProjet;
         this.titre = p.titre;
         this.sujet = p.titre;
-        this.listeEvals = p.listeEvals;
+        this.listeJalon = p.listeJalon;
     }
 
-    public void AjouterEval(Date date){
-        this.listeEvals.put(date, null);
+    public void ajouterEval(Date date){
+        Jalon j = new Jalon(date);
+        this.listeJalon.put(date, j);
     }
 
-    public void RetirerEval(Date date){
-        if(this.listeEvals.containsKey(date)){
-            this.listeEvals.remove(date);
+    public void ajouterEval(Date date, String unString){
+        Jalon j = new Jalon(date, unString);
+        this.listeJalon.put(date, j);
+    }
+
+
+    public void retirerEval(Date date){
+        if(this.listeJalon.containsKey(date)){
+            this.listeJalon.remove(date);
         }
     }
-    public void setNote(Date date, float note){
-        if(this.listeEvals.containsKey(date)){
-            this.listeEvals.remove(date);
-            this.listeEvals.put(date, note);
+    public void setNote(Date date, Jalon unJalon){
+        if(this.listeJalon.containsKey(date)){
+            this.listeJalon.remove(date);
+            this.listeJalon.put(date, unJalon);
         }
+    }
+
+    public HashMap<Date, Jalon> getListeJalon(){
+        return this.listeJalon;
     }
 }
