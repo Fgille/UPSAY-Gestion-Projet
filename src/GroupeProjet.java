@@ -41,4 +41,23 @@ public class GroupeProjet{
     {
         return this.unProjet.getListeJalons().get(uneDate);
     }
+
+    public Projet getProjet(){
+        return this.unProjet;
+    }
+
+    public ArrayList<File> consulterFichiersJalon(Jalon j){
+        return j.getFichier();
+    }
+
+    public void ajouterFichierJalon(Jalon j, File fichier){
+        j.setFichier(fichier);
+    }
+
+    public void ajouterFichierJalon(Jalon j, ArrayList<File> fichiers){
+        for(int i=0; i<fichiers.size(); i++)
+        {
+            this.ajouterFichierJalon(j, fichiers.get(i));
+        }
+    }
 }
