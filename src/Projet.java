@@ -9,7 +9,7 @@ public class Projet {
     private int idProjet;
     private String titre;
     private String sujet;
-    private HashMap<Date, Jalon> listeJalon;
+    private HashMap<Date, Jalon> listeJalons;
 
     public Projet(){
         this.idProjet = 0;
@@ -17,44 +17,44 @@ public class Projet {
         this.sujet = "";
     }
 
-    public Projet(int idProjet, String titre, String sujet, HashMap<Date, Jalon> listeEvals){
+    public Projet(int idProjet, String titre, String sujet, HashMap<Date, Jalon> listeJalons){
         this.idProjet = idProjet;
         this.titre = titre;
         this.sujet = sujet;
-        this.listeJalon = new HashMap<>();
+        this.listeJalons = new HashMap<>();
     }
 
     public Projet(Projet p){
         this.idProjet = p.idProjet;
         this.titre = p.titre;
         this.sujet = p.titre;
-        this.listeJalon = p.listeJalon;
+        this.listeJalons = p.listeJalons;
     }
 
-    public void ajouterEval(Date date){
+    public void ajouterJalon(Date date){
         Jalon j = new Jalon(date);
-        this.listeJalon.put(date, j);
+        this.listeJalons.put(date, j);
     }
 
-    public void ajouterEval(Date date, String unString){
+    public void ajouterJalon(Date date, String unString){
         Jalon j = new Jalon(date, unString);
-        this.listeJalon.put(date, j);
+        this.listeJalons.put(date, j);
     }
 
 
-    public void retirerEval(Date date){
-        if(this.listeJalon.containsKey(date)){
-            this.listeJalon.remove(date);
+    public void retirerJalon(Date date){
+        if(this.listeJalons.containsKey(date)){
+            this.listeJalons.remove(date);
         }
     }
     public void setNote(Date date, Jalon unJalon){
-        if(this.listeJalon.containsKey(date)){
-            this.listeJalon.remove(date);
-            this.listeJalon.put(date, unJalon);
+        if(this.listeJalons.containsKey(date)){
+            this.listeJalons.remove(date);
+            this.listeJalons.put(date, unJalon);
         }
     }
 
-    public HashMap<Date, Jalon> getListeJalon(){
-        return this.listeJalon;
+    public HashMap<Date, Jalon> getListeJalons(){
+        return this.listeJalons;
     }
 }

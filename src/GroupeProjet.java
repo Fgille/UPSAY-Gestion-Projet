@@ -39,6 +39,6 @@ public class GroupeProjet{
 
     public Jalon getJalon(Date uneDate)
     {
-        return this.unProjet.getListeJalon().get(uneDate);
+        return this.unProjet.getListeJalons().get(uneDate);
     }
 }
