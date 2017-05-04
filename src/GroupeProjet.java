@@ -60,4 +60,13 @@ public class GroupeProjet{
             this.ajouterFichierJalon(j, fichiers.get(i));
         }
     }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "GroupeProjet{" + "\n" +
+                "chefProjet=" + chefProjet + "\n" +
+                ", listeEleves=" + listeEleves.toString() + "\n" +
+                ", unProjet=" + unProjet + "\n" +
+                '}';
+    }
 }

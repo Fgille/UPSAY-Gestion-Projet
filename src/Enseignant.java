@@ -39,4 +39,22 @@ public class Enseignant extends Personne {
     public ArrayList<File> consulterFichiersJalon(Jalon j){
         return j.getFichier();
     }
+
+    public String getPrenom(){    {
+        return super();
+    }
+
+    public String getNom(){
+        return super();
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Enseignant{" + "\n" +
+                "Prenom=" + getPrenom() + "\n" +
+                "Nom=" + getNom() + "\n" +
+                "Mail=" + getMail() + "\n" +
+                "listeProjets=" + listeProjets.toString() + "\n" +
+                '}';
+    }
 }

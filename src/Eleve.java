@@ -13,4 +13,21 @@ public class Eleve extends Personne {
     public String getMail(){
         return this.getNom() + "." + this.getPrenom() + "@univ-evry.fr";
     }
+
+    public String getPrenom(){    {
+        return super();
+    }
+
+    public String getNom(){
+        return super();
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Eleve{" + "\n" +
+                "Prenom=" + getPrenom() + "\n" +
+                "Nom=" + getNom() + "\n" +
+                "Mail=" + getMail() + "\n" +
+                "}";
+    }
 }

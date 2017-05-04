@@ -32,4 +32,12 @@ public abstract class Personne {
     }
 
     public abstract String getMail();
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Personne{" + "\n" +
+                "nom='" + nom + '\'' + "\n" +
+                ", prenom='" + prenom + '\'' + "\n" +
+                '}';
+    }
 }

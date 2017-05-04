@@ -57,4 +57,14 @@ public class Projet {
     public HashMap<Date, Jalon> getListeJalons(){
         return this.listeJalons;
     }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Projet{" +
+                "idProjet=" + idProjet + "\n" +
+                ", titre='" + titre + "\n" +
+                ", sujet='" + sujet + "\n" +
+                ", listeJalons=" + listeJalons.toString() + "\n" +
+                '}';
+    }
 }

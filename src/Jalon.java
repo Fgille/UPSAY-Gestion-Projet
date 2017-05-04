@@ -51,4 +51,14 @@ public class Jalon {
     {
         this.listeFichiers.add(fichier);
     }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Jalon{" +
+                "resume='" + resume +  "\n" +
+                ", note=" + note + "\n" +
+                ", dateEval=" + dateEval + "\n" +
+                ", listeFichiers=" + listeFichiers.toString() + "\n" +
+                '}';
+    }
 }

@@ -10,4 +10,11 @@ public class Filiere {
     public Filiere(String unNom){
         this.nom = unNom;
     }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Filiere{" + "\n" +
+                "nom='" + nom +  "\n" +
+                '}';
+    }
 }
