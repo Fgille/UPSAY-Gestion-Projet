@@ -59,13 +59,8 @@ public class Jalon {
         return "Jalon{" +
                 "resume='" + resume +  "\n" +
                 ", note=" + note + "\n" +
-<<<<<<< HEAD
                 ", dateEval=" + dateEval.toString() + "\n" +
                 //", listeFichiers=" + listeFichiers.toString() + "\n" +
-=======
-                ", dateEval=" + dateEval + "\n" +
-                ", listeFichiers=" + listeFichiers.toString() + "\n" +
->>>>>>> origin/master
                 '}';
     }
 }

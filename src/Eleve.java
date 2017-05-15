@@ -14,17 +14,6 @@ public class Eleve extends Personne {
         return this.getNom() + "." + this.getPrenom() + "@univ-evry.fr";
     }
 
-<<<<<<< HEAD
-=======
-    public String getPrenom(){    {
-        return super();
-    }
-
-    public String getNom(){
-        return super();
-    }
-
->>>>>>> origin/master
     @java.lang.Override
     public java.lang.String toString() {
         return "Eleve{" + "\n" +

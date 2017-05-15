@@ -45,17 +45,8 @@ public class Enseignant extends Personne {
         return j.getFichier();
     }
 
-<<<<<<< HEAD
     public void ajouterProjetGroupeProjet(Projet p, GroupeProjet gp){
         gp.setProjet(p);
-=======
-    public String getPrenom(){    {
-        return super();
-    }
-
-    public String getNom(){
-        return super();
->>>>>>> origin/master
     }
 
     @java.lang.Override

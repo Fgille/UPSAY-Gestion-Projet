@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Created by pampl on 04/05/2017.
  *
@@ -61,11 +60,3 @@ public class main {
         System.out.println(patrick.consulteJalon(p1));
     }
 }
-=======
-public static void main(String [ ] args){
-    Eleve robert = New Eleve(Robert, Pierrot);
-    robert.toString();
-    Enseignant patrick = New Enseignant(Patrick, Pascal);
-    patrick.toString();
-}
->>>>>>> origin/master
