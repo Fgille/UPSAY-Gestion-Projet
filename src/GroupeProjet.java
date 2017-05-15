@@ -68,7 +68,11 @@ public class GroupeProjet{
     @java.lang.Override
     public java.lang.String toString() {
         return "GroupeProjet{" + "\n" +
+<<<<<<< HEAD
                 "chefProjet=" + chefProjet.getNom() + "" + chefProjet.getPrenom() + "\n" +
+=======
+                "chefProjet=" + chefProjet + "\n" +
+>>>>>>> origin/master
                 ", listeEleves=" + listeEleves.toString() + "\n" +
                 ", unProjet=" + unProjet + "\n" +
                 '}';
