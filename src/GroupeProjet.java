@@ -46,6 +46,10 @@ public class GroupeProjet{
         return this.unProjet;
     }
 
+    public void setProjet(Projet p){
+        this.unProjet =p;
+    }
+
     public ArrayList<File> consulterFichiersJalon(Jalon j){
         return j.getFichier();
     }
@@ -59,5 +63,14 @@ public class GroupeProjet{
         {
             this.ajouterFichierJalon(j, fichiers.get(i));
         }
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "GroupeProjet{" + "\n" +
+                "chefProjet=" + chefProjet.getNom() + "" + chefProjet.getPrenom() + "\n" +
+                ", listeEleves=" + listeEleves.toString() + "\n" +
+                ", unProjet=" + unProjet + "\n" +
+                '}';
     }
 }

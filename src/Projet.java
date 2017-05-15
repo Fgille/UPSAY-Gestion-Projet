@@ -17,7 +17,7 @@ public class Projet {
         this.sujet = "";
     }
 
-    public Projet(int idProjet, String titre, String sujet, HashMap<Date, Jalon> listeJalons){
+    public Projet(int idProjet, String titre, String sujet){
         this.idProjet = idProjet;
         this.titre = titre;
         this.sujet = sujet;
@@ -56,5 +56,15 @@ public class Projet {
 
     public HashMap<Date, Jalon> getListeJalons(){
         return this.listeJalons;
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Projet{" +
+                "idProjet=" + idProjet + "\n" +
+                ", titre='" + titre + "\n" +
+                ", sujet='" + sujet + "\n" +
+                ", listeJalons=" + listeJalons.toString() + "\n" +
+                '}';
     }
 }
