@@ -1,8 +1,6 @@
 /**
- * Created by pampl on 04/05/2017.
- *
+ * Created by TeamProjetSuiviProjet on 2017.
  */
-
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -33,7 +31,7 @@ public class main {
         patrick.setListeProjets(2,p1);
         System.out.println(gp1.toString());
 
-        System.out.println("Création d'un Jalon:");
+        /*System.out.println("Création d'un Jalon:");
         Date date1 = new Date(117, 0, 15);
         Jalon j1 = new Jalon(date1, "test");
         System.out.println(j1.toString());
@@ -57,6 +55,9 @@ public class main {
         System.out.println(j1.toString());
 
         System.out.println("Enseignant consulte un jalon:");
-        System.out.println(patrick.consulteJalon(p1));
+        System.out.println(patrick.consulteJalon(p1));*/
+
+        System.out.println("Test afficherListeProjetParDateJalon: \n");
+        patrick.afficherListeProjetParDateJalon();
     }
 }

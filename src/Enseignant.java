@@ -1,5 +1,5 @@
 /**
- * Created by TeamProjetSuiviProjet on 03/04/2017.
+ * Created by TeamProjetSuiviProjet on 2017.
  */
 
 import java.lang.reflect.Array;
@@ -7,11 +7,11 @@ import java.util.*;
 import java.io.*;
 
 public class Enseignant extends Personne {
-    private HashMap<Integer, Projet> listeProjets;
+    private ArrayList<Projet> listeProjets;
 
     public Enseignant(String n, String p){
         super(n,p);
-        this.listeProjets = new HashMap<>();
+        this.listeProjets = new ArrayList<>();
     }
 
     public String getMail() {
@@ -28,11 +28,11 @@ public class Enseignant extends Personne {
 
     public void creerProjet(int idProjet, String titre, String sujet){
         Projet p = new Projet(idProjet, titre, sujet);
-        this.listeProjets.put(idProjet,p);
+        this.listeProjets.add(idProjet,p);
     }
 
     public void setListeProjets(int nb, Projet p){
-        this.listeProjets.put(nb, p);
+        this.listeProjets.add(nb, p);
     }
 
     public void creerListeJalons(ArrayList<Date> listeDates, Projet p){
@@ -40,6 +40,19 @@ public class Enseignant extends Personne {
             p.ajouterJalon(listeDates.get(i));
         }
     }
+
+    /*public ArrayList<Projet> afficherListeProjetParDateJalon(Date uneDate){
+        ArrayList<Projet> listeProjets2 = new ArrayList<>();
+       for(Projet p : this.listeProjets){
+            if(p.getListeJalons() != null){
+                for(int i = 0; i<p.getListeJalons().size();i++){
+                    if(p.)
+                }
+           }
+       }
+
+       return listeProjets2;
+    }*/
 
     public ArrayList<File> consulterFichiersJalon(Jalon j){
         return j.getFichier();

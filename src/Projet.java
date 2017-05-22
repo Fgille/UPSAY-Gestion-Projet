@@ -1,5 +1,5 @@
 /**
- * Created by TeamProjetSuiviProjet on 03/04/2017.
+ * Created by TeamProjetSuiviProjet on 2017.
  */
 
 import java.util.*;
@@ -10,6 +10,7 @@ public class Projet {
     private String titre;
     private String sujet;
     private HashMap<Date, Jalon> listeJalons;
+    private double moyenne;
 
     public Projet(){
         this.idProjet = 0;
