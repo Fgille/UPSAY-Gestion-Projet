@@ -2,8 +2,10 @@
  * Created by TeamProjetSuiviProjet on 03/04/2017.
  */
 
+import java.awt.*;
 import java.io.*;
 import java.util.*;
+import java.lang.*;
 
 public class Jalon {
     private String resume;
@@ -53,6 +55,18 @@ public class Jalon {
     {
         this.listeFichiers.add(fichier);
     }
+
+    public void addFile(String path)
+    {
+        File temp = new File(path);
+        this.setFichier(temp);
+    }
+
+    /*public void openFile(String path)
+    {
+        Desktop desk = Desktop.getDesktop();
+        desk.open(new File(path));
+    }*/
 
     @java.lang.Override
     public java.lang.String toString() {

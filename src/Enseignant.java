@@ -44,8 +44,14 @@ public class Enseignant extends Personne {
     public ArrayList<Projet> afficherListeProjetParDateJalon(Date uneDate){
         ArrayList<Projet> listeProjets2 = new ArrayList<>();
        //En tournant dans la hash set de jalons, si la clé est égale à ce qu'on veut, on insère le projet dans l'arraylist
-
-       return listeProjets2;
+        for(Projet p : this.listeProjets){
+            if(p.getListeJalons() != null){
+                if(p.getJalon(uneDate) != null){
+                    listeProjets2.add(p);
+                }
+            }
+        }
+        return listeProjets2;
     }
 
     public ArrayList<File> consulterFichiersJalon(Jalon j){

@@ -55,6 +55,10 @@ public class Projet {
         }
     }
 
+    public Jalon getJalon(Date uneDate){
+        return this.getListeJalons().get(uneDate);
+    }
+
     public HashMap<Date, Jalon> getListeJalons(){
         return this.listeJalons;
     }
