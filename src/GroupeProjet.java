@@ -1,5 +1,5 @@
 /**
- * Created by TeamProjetSuiviProjet on 2017.
+ * Created by TeamProjetSuiviProjet on 03/04/2017.
  */
 
 import java.util.*;
@@ -63,6 +63,26 @@ public class GroupeProjet{
         {
             this.ajouterFichierJalon(j, fichiers.get(i));
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof GroupeProjet)) return false;
+
+        GroupeProjet that = (GroupeProjet) o;
+
+        if (!chefProjet.equals(that.chefProjet)) return false;
+        if (!listeEleves.equals(that.listeEleves)) return false;
+        return unProjet.equals(that.unProjet);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = chefProjet.hashCode();
+        result = 31 * result + listeEleves.hashCode();
+        result = 31 * result + unProjet.hashCode();
+        return result;
     }
 
     @java.lang.Override

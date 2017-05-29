@@ -1,20 +1,17 @@
+import java.util.Date;
+
 /**
- * Created by TeamProjetSuiviProjet on 2017.
+ * Created by pampl on 29/05/2017.
  */
-
-import java.text.SimpleDateFormat;
-import java.util.*;
-
-public class main {
-    public static void main(String [ ] args){
-
+public class Main {
+    public static void main(String[] args){
         System.out.println("Création et affichage élève");
         Eleve robert = new Eleve("Robert", "Pierrot");
         System.out.println(robert.toString());
 
         System.out.println("Création enseignant qui creer un projet et affichage professeur");
-        Enseignant patrick = new Enseignant("Patrick", "Pascal");
-        patrick.creerProjet(1, "Test Projet", "Refonte d'un site Intranet");
+        Enseignant patrick = new Enseignant("Jean", "Patrick");
+        patrick.creerProjet(1, "test", "lalalalalal");
         System.out.println(patrick.toString());
 
         System.out.println("Création d'un groupe projet, ajout d'élèves et nommage d'un chef de projet");
@@ -28,10 +25,10 @@ public class main {
         System.out.println("Creation d'un projet en dur, ajout du projet au groupe projet, ajout du projet dans la liste projets de l'enseignant et affichage ");
         Projet p1 = new Projet(2,"Projet Java", "Création d'un slack");
         patrick.ajouterProjetGroupeProjet(p1, gp1);
-        patrick.setListeProjets(2,p1);
+        patrick.setListeProjets(p1);
         System.out.println(gp1.toString());
 
-        /*System.out.println("Création d'un Jalon:");
+        System.out.println("Création d'un Jalon:");
         Date date1 = new Date(117, 0, 15);
         Jalon j1 = new Jalon(date1, "test");
         System.out.println(j1.toString());
@@ -46,18 +43,13 @@ public class main {
         p1.ajouterJalon(date2, "ceci est un test");
         System.out.println(p1.toString());
 
-
         System.out.println("Suppression d'un jalon:");
         p1.retirerJalon(date2);
         System.out.println(p1.toString());
-
         j1.setNote(5.0);
         System.out.println(j1.toString());
 
         System.out.println("Enseignant consulte un jalon:");
-        System.out.println(patrick.consulteJalon(p1));*/
-
-        System.out.println("Test afficherListeProjetParDateJalon: \n");
-        patrick.afficherListeProjetParDateJalon();
+        System.out.println(patrick.consulteJalon(p1));
     }
 }
