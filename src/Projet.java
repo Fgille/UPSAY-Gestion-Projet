@@ -11,11 +11,13 @@ public class Projet {
     private String sujet;
     private HashMap<Date, Jalon> listeJalons;
     private double moyenne;
+    private GroupeProjet unGroupeProjet;
 
     public Projet(){
         this.idProjet = 0;
         this.titre = "";
         this.sujet = "";
+        unGroupeProjet = new GroupeProjet();
     }
 
     public Projet(int idProjet, String titre, String sujet){
@@ -23,6 +25,7 @@ public class Projet {
         this.titre = titre;
         this.sujet = sujet;
         this.listeJalons = new HashMap<>();
+        unGroupeProjet = new GroupeProjet();
     }
 
     public Projet(Projet p){
@@ -30,6 +33,11 @@ public class Projet {
         this.titre = p.titre;
         this.sujet = p.titre;
         this.listeJalons = p.listeJalons;
+        this.unGroupeProjet=p.unGroupeProjet;
+    }
+
+    public GroupeProjet getUnGroupeProjet() {
+        return unGroupeProjet;
     }
 
     public void ajouterJalon(Date date){

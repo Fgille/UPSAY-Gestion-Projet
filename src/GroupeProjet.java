@@ -16,6 +16,7 @@ public class GroupeProjet{
 
     public void ajouterEleve(Eleve e){
         this.listeEleves.add(e);
+        e.setUnGroupeProjet(this);
     }
 
     public void supprimerEleve(Eleve e){

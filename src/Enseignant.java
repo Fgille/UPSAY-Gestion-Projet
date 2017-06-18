@@ -18,6 +18,10 @@ public class Enseignant extends Personne {
         return this.getNom() + "." + this.getPrenom()+ "-professeur@univ-evry.fr";
     }
 
+    public ArrayList<Projet> getListeProjets() {
+        return listeProjets;
+    }
+
     public HashMap<Date, Jalon> consulteJalon(Projet p){
         return p.getListeJalons();
     }

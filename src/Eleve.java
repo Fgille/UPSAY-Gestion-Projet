@@ -5,9 +5,18 @@
 import java.util.*;
 
 public class Eleve extends Personne {
+    private GroupeProjet unGroupeProjet;
 
     public Eleve(String n, String p) {
         super(n, p);
+    }
+
+    public void setUnGroupeProjet(GroupeProjet unGroupeProjet) {
+        this.unGroupeProjet = unGroupeProjet;
+    }
+
+    public GroupeProjet getUnGroupeProjet() {
+        return unGroupeProjet;
     }
 
     public String getMail(){
