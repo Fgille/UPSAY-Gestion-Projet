@@ -1,17 +1,36 @@
 /**
- * Created by TeamProjetSuiviProjet on 03/04/2017.
- */
+*
+* @author TeamProjetSuiviProjet on 03/04/2017.
+*
+*/
 
 import java.util.*;
 import java.io.*;
 
+/*
+Class "Projet", définie par un ID, un titre et un sujet.
+Ce projet est composé de Jalons.
+*/
+
 public class Projet {
+    /**
+    * L'id du projet. Cet id n'est pas modifiable et est unique.
+    *
+    * @see Projet#Projet(int, String, double )
+    *
+    */
     private int idProjet;
     private String titre;
     private String sujet;
     private HashMap<Date, Jalon> listeJalons;
     private double moyenne;
     private GroupeProjet unGroupeProjet;
+
+/*
+*
+*@see GroupeProjet
+*
+*/
 
     public Projet(){
         this.idProjet = 0;
@@ -35,6 +54,10 @@ public class Projet {
         this.listeJalons = p.listeJalons;
         this.unGroupeProjet=p.unGroupeProjet;
     }
+/**
+*
+* @return Le groupe de projet
+*/
 
     public GroupeProjet getUnGroupeProjet() {
         return unGroupeProjet;

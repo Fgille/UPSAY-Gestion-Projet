@@ -1,8 +1,14 @@
 /**
- * Created by TeamProjetSuiviProjet on 03/04/2017.
- */
+*
+* @author TeamProjetSuiviProjet on 03/04/2017.
+*
+*/
 
 import java.util.*;
+
+/*
+Class héritée de "Personne". Permet de définir les éléves et de leur attribuer un groupe projet
+ */
 
 public class Eleve extends Personne {
     private GroupeProjet unGroupeProjet;

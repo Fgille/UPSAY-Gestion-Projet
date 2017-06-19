@@ -1,9 +1,16 @@
 /**
- * Created by TeamProjetSuiviProjet on 03/04/2017.
- */
+*
+* @author TeamProjetSuiviProjet on 03/04/2017.
+*
+*/
 
 import java.util.*;
 import java.io.*;
+
+/*
+Class GroupeProjet, un ensemble d'éléves réalisent un projet. La variable chef de projet va permettre de désigner quelle
+personne va remplir les jalons.
+ */
 
 public class GroupeProjet{
     private Eleve chefProjet;
@@ -94,4 +101,9 @@ public class GroupeProjet{
                 ", unProjet=" + unProjet + "\n" +
                 '}';
     }
+
+    public Eleve getChefProjet() {
+        return chefProjet;
+    }
+
 }

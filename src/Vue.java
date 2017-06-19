@@ -1,6 +1,11 @@
 /**
- * Created by pampl on 22/05/2017.
- */
+*
+* @author TeamProjetSuiviProjet
+*
+*/
+
+/* Non utilisé par faute de temps
+*/
 
 import javax.swing.*;
 public class Vue {

@@ -1,6 +1,8 @@
 /**
- * Created by pampl on 23/05/2017.
- */
+*
+* @author TeamProjetSuiviProjet on 23/05/2017.
+*
+*/
 
 import javax.swing.*;
 import java.awt.Color;

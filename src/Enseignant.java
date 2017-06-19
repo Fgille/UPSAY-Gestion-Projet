@@ -1,10 +1,19 @@
 /**
- * Created by TeamProjetSuiviProjet on 03/04/2017.
- */
+*
+* @author TeamProjetSuiviProjet on 03/04/2017.
+*
+*/
 
 import java.lang.reflect.Array;
 import java.util.*;
 import java.io.*;
+
+/*
+Class héritée de "Personne", permet de définir l'enseignant. L'enseignant pourra:
+- Ajouter des jalons
+- Consulter les jalons
+- Afficher la liste des projets
+ */
 
 public class Enseignant extends Personne {
     private ArrayList<Projet> listeProjets;
@@ -44,6 +53,8 @@ public class Enseignant extends Personne {
             p.ajouterJalon(listeDates.get(i));
         }
     }
+
+// Va générer une liste des projets ordonnées par leur date de Jalons 
 
     public ArrayList<Projet> afficherListeProjetParDateJalon(Date uneDate){
         ArrayList<Projet> listeProjets2 = new ArrayList<>();

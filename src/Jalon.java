@@ -1,11 +1,17 @@
 /**
- * Created by TeamProjetSuiviProjet on 03/04/2017.
- */
+*
+* @author TeamProjetSuiviProjet on 03/04/2017.
+*
+*/
 
 import java.awt.*;
 import java.io.*;
 import java.util.*;
 import java.lang.*;
+
+/*
+Un projet est composé d'un ensemble de jalons
+ */
 
 public class Jalon {
     private String resume;

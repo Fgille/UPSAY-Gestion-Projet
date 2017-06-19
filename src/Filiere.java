@@ -1,6 +1,11 @@
 /**
- * Created by pampl on 03/04/2017.
- */
+*
+* @author TeamProjetSuiviProjet on 03/04/2017.
+*
+*/
+
+// Inutilisée
+
 public class Filiere {
     private String nom;
 
